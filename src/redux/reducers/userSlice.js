@@ -27,7 +27,7 @@ export const userSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    // Gestion des actions asynchrones avec extraReducers
+    // Gestion des actions asynchrones
     builder
       .addCase(updateUserName.fulfilled, (state, action) => {
         // Mettre à jour les données utilisateur avec le nouveau nom d'utilisateur
